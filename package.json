@@ -4,6 +4,7 @@
   "description": "voxiio_server",
   "main": "./src/index.ts",
   "scripts": {
+    "start": "node ./dist/main/index.js",
     "dev": "nodemon ./src/main/index.ts",
     "build": "tsc"
   },
