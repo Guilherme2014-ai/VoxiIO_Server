@@ -4,7 +4,8 @@
   "description": "voxiio_server",
   "main": "./src/index.ts",
   "scripts": {
-    "dev": "nodemon ./src/main/index.ts"
+    "dev": "nodemon ./src/main/index.ts",
+    "build": "tsc"
   },
   "author": "Guilherme Henrique",
   "license": "ISC",
