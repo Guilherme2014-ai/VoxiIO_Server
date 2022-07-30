@@ -17,9 +17,11 @@ export class SocketIO {
             });
         });
 
-        socket.on("new_message", (chatId, messageData) => {
+        socket.on("new_message", (chatId, messageData, contactName: string) => {
           if (chatId && messageData) {
-            socket.to(`chat:${chatId}`).emit("message_receive", messageData);
+            socket
+              .to(`chat:${chatId}`)
+              .emit("message_receive", messageData, contactName);
           }
         });
 
